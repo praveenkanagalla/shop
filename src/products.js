@@ -5,7 +5,7 @@ import product4 from "./assets/104.jpg";
 import product5 from "./assets/105.jpg";
 import product6 from "./assets/106.jpg";
 import product7 from "./assets/107.jpg";
-import product8 from "./assets/1.jpeg";
+import product8 from "./assets/108.jpg";
 
 export const PRODUCTS = [
   {

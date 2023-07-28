@@ -6,10 +6,16 @@ import { useNavigate } from "react-router-dom";
 
 import "./cart.css";
 export const Cart = () => {
-  const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
+  const { cartItems, getTotalCartAmount } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
 
   const navigate = useNavigate();
+
+  const handleCheck = () => {
+    alert("your order has been placed successfully");
+    navigate("/");
+    window.location.reload();
+  }
 
   return (
     <div className="cart">
@@ -29,13 +35,9 @@ export const Cart = () => {
           <p className="checkout__bill"> Subtotal: ₹.{totalAmount} </p>
           <button onClick={() => navigate("/")}> Continue Shopping </button>
           <button
-            onClick={() => {
-              checkout();
-              navigate("/checkout");
-            }}
+            onClick={handleCheck}
           >
-            {" "}
-            Checkout{" "}
+          Checkout
           </button>
         </div>
       ) : (
