@@ -24,7 +24,7 @@ export const Shop = () => {
   return (
     <div className="shop">
       <div className="shopTitle">
-        <input id="search-box" placeholder='Search Company Name...' onChange={handleSearch} />
+        <input id="search-box" placeholder='Search Item Name...' onChange={handleSearch} />
       </div>
       <div className="products">
       <Row lg={4} md={2} xs={1}>
