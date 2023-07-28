@@ -27,7 +27,7 @@ export const Shop = () => {
         <input id="search-box" placeholder='Search Company Name...' onChange={handleSearch} />
       </div>
       <div className="products">
-      <Row lg={4} md={2} sm={1}>
+      <Row lg={4} md={2} xs={1}>
         {filteredList.map((product) => (
           <Col>
             <Product data={product} />
